@@ -136,6 +136,7 @@ public class Maximumsuche extends PApplet
                 // ToDo: Falls i dem aktuell untersuchtem oder der aktuellen Maximal-
                 //       position entspricht, muss eine andere Farbe gewählt werden
                 // ----------------------------------------------------------------------
+                    
 
                 // Balkendiagramm zeichnen
                 if (zahlen[i]>=0) rect(120, 25+i*15, zahlen[i]+1, 13);
