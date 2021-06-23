@@ -19,6 +19,9 @@ public class Maximumsuche extends PApplet
     // Liste mit allen Werten //<>//
     int[]    zahlen;    
     String[] namen;
+    
+    //blauer Stift:
+    int BS;
 
     // Hilfsvariablen für die Suche
     // -------------------------------------------------------------------
@@ -159,7 +162,16 @@ public class Maximumsuche extends PApplet
         //       Kommentiere die Maximumsuche
         // ------------------------------------------------------------------------------
         //<>//
-        return -1;
+        if (zahlen.length<=0){
+            return -1;
+        }
+        int MI = 0;
+        for (int BS=0; BS<zahlen.length; BS++){
+            if (zahlen[MI]<zahlen[BS]){
+                MI = BS;
+            }
+        }
+        return MI;
     }
 
     /**
